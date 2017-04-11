@@ -1,9 +1,9 @@
-1 git ɾ��Զ�ֿ̲��������� git remote rm origin
-2 ������֤�Ƿ���ڿɽ��� Intent ��Ӧ�ã���� Intent ������� resolveActivity()��������Ϊ�ǿգ�
-  ��������һ��Ӧ���ܹ������� Intent�����ҿ��԰�ȫ���� startActivity()�� ������Ϊ�գ�������Ӧʹ�ø�
-  Intent�����п��ܣ���Ӧͣ�õ��ø� Intent �Ĺ��ܡ�
+1 git 删除远程仓库连接命令 git remote rm origin
+2 事先验证是否存在可接收 Intent 的应用，请对 Intent 对象调用 resolveActivity()。如果结果为非空，
+  则至少有一个应用能够处理该 Intent，并且可以安全调用 startActivity()。 如果结果为空，则您不应使用该
+  Intent。如有可能，您应停用调用该 Intent 的功能。
 3 loader
-  ������ÿ�� Activity �� Fragment��
-  ֧���첽�������ݡ�
-  ���������Դ�������ݱ仯ʱ�����½����
-  ��ĳһ���ø��ĺ��ؽ�������ʱ�����Զ�����������һ�����������αꡣ ��ˣ������������²�ѯ�����ݡ�
+  可用于每个 Activity 和 Fragment。
+  支持异步加载数据。
+  监控其数据源并在内容变化时传递新结果。
+  在某一配置更改后重建加载器时，会自动重新连接上一个加载器的游标。 因此，它们无需重新查询其数据。
