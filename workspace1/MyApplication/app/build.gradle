@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+//    dexOptions {
+//        preDexLibraries = false
+//        javaMaxHeapSize "4g"
+//    }
+    defaultConfig {
+//        multiDexEnabled true
+        applicationId "com.example.user.myapplication"
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:20.0.0'
+//    compile 'com.android.support:support-v4:24.1.1'
+    //    complie 'com.android.support:animated-vector-drawable:24.1.1'
+    //    complie 'com.android.support:support-annotations:24.1.1'
+    //    complie 'com.android.support:support-vetcor-drawable:24.1.1'
+    //    compile 'com.android.support:appcompat-v7:24.1.1'
+    //    compile 'com.android.support:support-v4:24.1.1'
+}
