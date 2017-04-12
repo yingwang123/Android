@@ -20,37 +20,21 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.EventLog;
 import android.util.Log;
-import android.util.Xml;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Text;
-
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.io.PushbackReader;
-import java.io.UnsupportedEncodingException;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.concurrent.Callable;
 
 

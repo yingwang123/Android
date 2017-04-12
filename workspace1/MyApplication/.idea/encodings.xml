@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/activies/Intent1Activity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/intent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/activities/ActivityA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/activities/ActivityB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/activities/ActivityC.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/activities/Intent1Activity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/user/myapplication/api笔记" charset="UTF-8" />
   </component>
 </project>

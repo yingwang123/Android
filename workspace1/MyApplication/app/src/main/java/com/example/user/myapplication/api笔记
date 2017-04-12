@@ -1,0 +1,56 @@
+1 git 删除远程仓库连接命令 git remote rm origin
+2 事先验证是否存在可接收 Intent 的应用，请对 Intent 对象调用 resolveActivity()。如果结果为非空，
+  则至少有一个应用能够处理该 Intent，并且可以安全调用 startActivity()。 如果结果为空，则您不应使用该
+  Intent。如有可能，您应停用调用该 Intent 的功能。
+3 loader
+  可用于每个 Activity 和 Fragment。
+  支持异步加载数据。
+  监控其数据源并在内容变化时传递新结果。
+  在某一配置更改后重建加载器时，会自动重新连接上一个加载器的游标。 因此，它们无需重新查询其数据。
+  -------------------------------------------------------------------------------------------
+1 任务和返回栈：任务指再执行程序是与用户交互的一系列Activity，这些Activity按照各自的打开顺序排列在堆栈（即返回栈）中。
+  manifest 控制任务的相关属性
+  taskAffinity 默认继承application的属性,表示一个任务，这个任务就是当前Activity所在的任务
+
+  launchMode  设置启动模式
+
+  allowTaskReparenting 默认值为“false”，当启动Activity的任务接下来转至前台时，Activity是否能从该任务转移至前台具有亲和关系的任务
+  true--可以，false--表示它仍需要留在启动它的任务处。
+
+  clearTaskOnLaunch 是否每当从主屏幕重新启动任务时都从中移除根 Activity 之外的所有 Activity —“true”表示始终将任务清除到只剩其根
+  Activity；“false”表示不做清除。 默认值为“false”。该属性只对启动新任务的 Activity（根 Activity）有意义；对于任务中的所有其他
+  Activity，均忽略该属性。
+
+  alwaysRetainTaskState
+  
+  finishOnTaskLaunch
+
+  四种启动模式
+  standard:标准模式，启动一个activity将会创建一个这个Activity实例，并将其压入到任务栈中
+  singleTop:如果将要启动的Activity，在任务栈的栈顶存在，将不会创建新的当前Activity实例，会调用栈顶Activity的
+  onNewIntent()方法。如果启动的Activity的实例不存在任务栈的栈顶，则同standard模式相同。
+  singleTask:启动一个Activity，如果这个Activity在当前任务栈中存在实例，那么将这个Activity实例之上的所有Activity实例移除
+  ，将此Activity实例至于栈顶，并调用这个Activity的onNewInstance()方法。(启动的Activity和当前Activity任务栈相同)
+  singleInstance:以这种模式启动的Activity具有全局唯一性，具有独占性（即其会独占一个任务栈），被他开启的任何activity都会运
+  行在其他任务中。eg：A 标准启动模式  B singleInstance启动模式 A--B--A--B,那么返回键顺序则为（B--A--A）;
+  被singleInstance模式的Activity启动的其他Activity，能够在新的任务中启动，但不一定开启新的任务，也可能在已有的一个任务中开启，
+  什么时候开启一个新的的任务呢，条件是：当前系统中是不是已经有了一个其他Activity的taskAffinity属性所指定的任务
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

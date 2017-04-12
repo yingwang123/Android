@@ -3,9 +3,7 @@ package com.example.user.myapplication;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.RandomAccess;
 
 /**
  * Created by user on 2016/8/30.

@@ -1,4 +1,4 @@
-package com.example.user.myapplication.activies;
+package com.example.user.myapplication.activities;
 
 import android.content.Intent;
 import android.provider.AlarmClock;

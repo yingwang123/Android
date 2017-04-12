@@ -9,7 +9,7 @@ android {
 //    }
     defaultConfig {
 //        multiDexEnabled true
-        applicationId "com.example.user.testapplication"
+        applicationId "com.example.user.myapplication"
         minSdkVersion 14
         targetSdkVersion 19
         versionCode 1

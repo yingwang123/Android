@@ -1,4 +1,4 @@
-package com.example.user.myapplication.activies;
+package com.example.user.myapplication.activities;
 
 import android.app.Activity;
 import android.app.LoaderManager;
@@ -32,6 +32,8 @@ public class LoaderActivity extends Activity implements LoaderManager.LoaderCall
                 new int[] { android.R.id.text1, android.R.id.text2 }, 0);
         lv_contants.setAdapter(adapter);
         getLoaderManager().initLoader(0, null, this);
+        //this.grantUriPermission();
+
 
     }
 
