@@ -22,7 +22,7 @@
   Activity，均忽略该属性。
 
   alwaysRetainTaskState
-  
+
   finishOnTaskLaunch
 
   四种启动模式
@@ -35,6 +35,28 @@
   行在其他任务中。eg：A 标准启动模式  B singleInstance启动模式 A--B--A--B,那么返回键顺序则为（B--A--A）;
   被singleInstance模式的Activity启动的其他Activity，能够在新的任务中启动，但不一定开启新的任务，也可能在已有的一个任务中开启，
   什么时候开启一个新的的任务呢，条件是：当前系统中是不是已经有了一个其他Activity的taskAffinity属性所指定的任务
+
+---------------------------------------------------------------------------------------------------------------
+屏幕概览
+  移除任务：1 设置activity属性 android:excludeFromRecents="true"，将任务从屏幕中彻底移除
+           2 设置<activity> 属性 android:maxRecents （50为最大值，小于1无效）
+           3 条用finishAndRemoveTask()方法，移除该任务以及与其相关的activity
+
+服务
+  service是一个可以在后台执行长时间运行操作而不提供用户界面的应用组件。
+  服务的两种形式
+      启动：当应用组件通过调用startService()启动服务时，服务处于“启动”状态。一旦启动服务，服务可以在后台无限期运行，即使启动服务的组件
+           被销毁也不受影响。已启动的服务通常是执行单一操作，而且不会将结果返回给调用方。
+           停止方式：stopself  stopService
+      绑定：当应用组件通过调用bindservice（）绑定到服务时，服务即处于“绑定”状态。绑定服务提供了一个客户端-服务器接口，允许组件与服务进
+           行交互、发送请求、获取结果，甚至是利用进程间通信跨进程执行这些操作。仅当与另一应用租金绑定时，绑定服务才会运行。多个组件可以
+           同时绑定一个服务，但全部取消绑定时，该服务即会被销毁。
+           实现方式：
+           扩展IBinder
+           messager
+           AIDL
+
+  IntentService--helloIntentService
 
 
 

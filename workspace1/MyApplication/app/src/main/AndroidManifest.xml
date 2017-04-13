@@ -21,7 +21,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.user.myapplication.activities.ActivityA"
+            android:name="com.example.user.myapplication.activities.TestMainActivity"
             android:label="@string/app_name"
             android:launchMode="standard"
             android:allowTaskReparenting="false">
@@ -32,10 +32,11 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.user.myapplication.activities.ActivityB"
-                  android:launchMode="singleInstance"/>
+                  android:process=".remote"/>
         <activity android:name="com.example.user.myapplication.activities.ActivityC"
                   android:launchMode="singleTask"
-                  android:taskAffinity="com.example.user.myapplication.activities.ActivityC"/>
+                  android:taskAffinity="com.example.user.myapplication.activities.ActivityC"
+                  android:excludeFromRecents="true"/>
         <activity android:name="com.example.user.myapplication.utils.ImageUtils" />
 
         <service
@@ -46,6 +47,13 @@
             android:name="com.example.user.myapplication.MainActivity"
             android:label="@string/title_activity_intent1" >
         </activity>
+        <activity
+            android:name="com.example.user.myapplication.activities.ActivityA"/>
+        <activity
+            android:name="com.example.user.myapplication.activities.ServiceActivity"/>
+
+        <service android:name=".services.HelloService"/>
+        <service android:name=".services.HelloIntentService"/>
     </application>
 
 </manifest>
