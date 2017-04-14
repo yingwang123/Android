@@ -52,11 +52,24 @@
            行交互、发送请求、获取结果，甚至是利用进程间通信跨进程执行这些操作。仅当与另一应用租金绑定时，绑定服务才会运行。多个组件可以
            同时绑定一个服务，但全部取消绑定时，该服务即会被销毁。
            实现方式：
-           扩展IBinder
-           messager
+           扩展IBinder  本地通信
+           Messenger
            AIDL
 
   IntentService--helloIntentService
+
+---------------------------------------------------------------------------------------------------------------------------------
+服务
+  Messenger使用
+      如果服务于远程进程通信，可使用message人为服务提供接口。
+  使用方法：
+      # 服务实现一个handler，由其接收来自客户端的每个调用的回调
+      # Handler用于创建Messenger对象（对Handler的引用）
+      # Messenger创建一个Ibinder，服务通过onBind（）使其返回客户端
+      # 客户端使用IBinder将Messenger实例化，然后使用后者将message对象发送给服务
+      # 服务在其Handler中（在handleMessage()方法中）接收每个message。
+      这样，客户端并没有调用服务的“方法”。而客户端传递的message对象是服务在其handler中接收的。
+
 
 
 

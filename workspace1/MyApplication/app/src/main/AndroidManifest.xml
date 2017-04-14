@@ -54,6 +54,7 @@
 
         <service android:name=".services.HelloService"/>
         <service android:name=".services.HelloIntentService"/>
+        <service android:name=".services.MessengerService"/>
     </application>
 
 </manifest>
