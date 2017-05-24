@@ -30,6 +30,8 @@ public class TestMainActivity extends BaseActivity implements View.OnClickListen
     Intent intent = new Intent();
     @Bind(R.id.pv_1)
     ProgressView pv_1;
+    @Bind(R.id.btn_cusomerview)
+    Button btn_cusomerview;
     private int i=0;
     Timer timer =new Timer();
     @Override
@@ -56,7 +58,7 @@ public class TestMainActivity extends BaseActivity implements View.OnClickListen
     }
     @OnClick({R.id.btn_stack
     ,R.id.btn_servicetest,
-            R.id.btn_animation})
+            R.id.btn_animation,R.id.btn_cusomerview})
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -69,6 +71,8 @@ public class TestMainActivity extends BaseActivity implements View.OnClickListen
             case R.id.btn_animation:
                 intent.setClass(this,AnimationActivity.class);
                 break;
+            case R.id.btn_cusomerview:
+                intent.setClass(this,TestCustmerViewActivity.class);
             default:
                 break;
         }

@@ -3,9 +3,49 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <com.example.user.myapplication.view.ProgressView
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"/>
+   <com.example.user.myapplication.view.LineWrapLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_launcher"/><ImageView
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_launcher"/>
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@mipmap/ic_launcher"/>
+
+
+
+
+   </com.example.user.myapplication.view.LineWrapLayout>
 
 </LinearLayout>

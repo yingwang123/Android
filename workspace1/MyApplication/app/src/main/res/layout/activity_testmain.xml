@@ -27,6 +27,11 @@
         android:layout_height="wrap_content"
         android:text="动画"
         android:id="@+id/btn_animation"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义view"
+        android:id="@+id/btn_cusomerview"/>
     <com.example.user.myapplication.view.ProgressView
         android:id="@+id/pv_1"
         android:layout_width="match_parent"

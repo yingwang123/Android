@@ -59,6 +59,9 @@
         <activity
             android:name="com.example.user.myapplication.activities.AnimationActivity"/>
 
+        <activity
+            android:name="com.example.user.myapplication.activities.TestCustmerViewActivity"/>
+
         <service android:name=".services.HelloService"/>
         <service android:name=".services.HelloIntentService"/>
         <service android:name=".services.MessengerService"/>
