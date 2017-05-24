@@ -69,8 +69,13 @@
       # 客户端使用IBinder将Messenger实例化，然后使用后者将message对象发送给服务
       # 服务在其Handler中（在handleMessage()方法中）接收每个message。
       这样，客户端并没有调用服务的“方法”。而客户端传递的message对象是服务在其handler中接收的。
+ContentProvider
+      ContentResolver.query(uri ,projection,selection ,selecetionArgs,sortOrder);
 
+-------------------------------------------------------------------------------------------
+threadlocal handler
 
+threadloacl 实现线程本地存储，即，每个线程访问变量有自己的值：不同线程访问相同变量，但是值不同
 
 
 

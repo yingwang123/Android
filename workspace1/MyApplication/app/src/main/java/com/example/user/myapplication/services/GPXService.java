@@ -1,4 +1,4 @@
-package com.example.user.myapplication;
+package com.example.user.myapplication.services;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -11,6 +11,8 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
+
+import com.example.user.myapplication.activities.TwoActicity;
 
 /**
  * Created by user on 2016/9/20.
@@ -64,7 +66,7 @@ public class GPXService extends Service {
         return null;
     }
 
-    class TestBinder extends Binder {
+    public class TestBinder extends Binder {
 
         public void testMethod() {
             Log.e("TestService", "执行 testMethod()");

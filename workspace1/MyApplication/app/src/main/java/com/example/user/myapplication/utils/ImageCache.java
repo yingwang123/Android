@@ -1,16 +1,12 @@
+/*
 package com.example.user.myapplication;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ImageView;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.methods.HttpGet;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
@@ -24,9 +20,11 @@ import java.util.LinkedHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 
+*/
 /**
  * Created by user on 2016/9/2.
- */
+ *//*
+
 public class ImageCache {
     final static int HARD_CACHE_CAPACITY=30;
     //定义缓存A
@@ -46,9 +44,11 @@ public class ImageCache {
     public static final ConcurrentHashMap<String,SoftReference<Bitmap>> mSoftBitmapCache
             = new ConcurrentHashMap<String, SoftReference<Bitmap>>(HARD_CACHE_CAPACITY/2);
 
-    /**
+    */
+/**
      * 从缓存中获取图片
-     */
+     *//*
+
 
     public static Bitmap getBitmapForCache(String url){
         synchronized (mHardBitmapCache){
@@ -132,3 +132,4 @@ public class ImageCache {
         }
     }
 }
+*/

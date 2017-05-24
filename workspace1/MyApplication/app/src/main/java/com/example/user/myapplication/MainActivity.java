@@ -30,6 +30,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import com.example.user.myapplication.activities.TwoActicity;
+import com.example.user.myapplication.services.GPXService;
+import com.example.user.myapplication.utils.Account;
+import com.example.user.myapplication.utils.DownUtil;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
@@ -118,8 +123,8 @@ public class MainActivity extends ActionBarActivity {
                 notify1.icon = R.mipmap.ic_launcher;
                 notify1.tickerText = "TickerText:您有新短消息，请注意查收！";
                 notify1.when = System.currentTimeMillis();
-                notify1.setLatestEventInfo(getApplicationContext(), "Notification Title",
-                        "This is the notification message", pendingIntent);
+                /*notify1.setLatestEventInfo(getApplicationContext(), "Notification Title",
+                        "This is the notification message", pendingIntent);*/
                 notify1.number = 1;
                 notify1.flags = Notification.FLAG_AUTO_CANCEL; // FLAG_AUTO_CANCEL表明当通知被用户点击时，通知将被清除。
                 // 通过通知管理器来发起通知。如果id不同，则每click，在statu那里增加一个提示

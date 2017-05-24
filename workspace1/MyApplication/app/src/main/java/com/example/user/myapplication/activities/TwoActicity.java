@@ -1,4 +1,4 @@
-package com.example.user.myapplication;
+package com.example.user.myapplication.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.user.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

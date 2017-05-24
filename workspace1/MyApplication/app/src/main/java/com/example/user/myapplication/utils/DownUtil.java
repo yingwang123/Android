@@ -1,4 +1,4 @@
-package com.example.user.myapplication;
+package com.example.user.myapplication.utils;
 
 import java.io.InputStream;
 import java.io.RandomAccessFile;
